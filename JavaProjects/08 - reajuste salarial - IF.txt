@@ -1,0 +1,29 @@
+ATIVIDADE 08
+
+Reajuste de salário
+
+A empresa Acme Ltda. vai proporcionar um 
+aumento de salário para os seus funcionários, 
+mas este aumento deverá seguir algumas regras, são elas:
+
+1 - O funcionário receberá um reajuste de 15% caso 
+o seu salário atual seja menor do que 1500;
+
+2 - Se o salário for maior ou igual a 1500, 
+mas menor ou igual a 3000, seu reajuste será de 10%;
+
+3 - Caso o salário seja maior que 3000, o reajuste deverá ser de 5%.
+
+Para facilitar o trabalho do RH em determinar o novo 
+salário dos funcionários você deve desenvolver um programa, 
+em Java, que efetue os cálculos. O programa deverá solicitar 
+o nome do funcionário e o seu salário atual. 
+
+Ao concluir a entrada de dados o sistema deverá exibir o nome do funcionário, 
+o percentual de reajuste, e o salário novo com reajuste.
+
+Use a sua criatividade pra implementar a interação com o usuário ;)
+
+*** Enviar o projeto para celso@celso.dev.br, com o assunto Atividade 07.
+
+          ***** B O M   T R A B A L H O *****
