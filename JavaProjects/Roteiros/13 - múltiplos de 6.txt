@@ -1,0 +1,5 @@
+Atividade 13
+
+Escreva um programa, em Java, que solicite ao usuário dois valores. O programa deverá exibir todos os valores múltiplos de 6 entre o menor e o maior valor fornecidos. Utilize o Scanner para executar esta tarefa.
+
+Envie o projeto para celso@celso.dev.br

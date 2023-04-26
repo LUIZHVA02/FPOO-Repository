@@ -1,0 +1,11 @@
+Quantos dias eu já vivi, aproximadamente? (ATIVIDADE 01)
+
+Escreva um programa em Java que pergunte a idade do usuário em anos, e devolva uma mensagem da seguinte forma:
+
+Você já viveu aproximadamente ... dias!
+
+Orientações:
+
+1) Nome do projeto: dias_vividos
+
+2) Enviar o projeto "zipado" (compactado), atividade01.zip para celso@celso.dev.br

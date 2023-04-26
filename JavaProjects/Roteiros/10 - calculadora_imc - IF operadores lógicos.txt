@@ -6,12 +6,11 @@ O valor do IMC é o resultado da divisão do peso pela altura ao quadrado.
 
 Escreva um programa de computador, utilizando a linguagem Java, 
 que calcule o IMC de um indivíduo qualquer. 
-O programa deverá solicitar o nome do usuário, 
-o peso em Kg e a altura em metros.
+O programa deverá solicitar o nome do usuário, o peso em Kg e a altura em metros.
 
 Esse sistema também deverá apresentar a situação atual do indivíduo, 
-por exemplo, se está abaixo do peso, acima do peso, peso ideal, etc. 
-Para isso use como referência a seguinte tabela:
+por exemplo, se está abaixo do peso, acima do peso, peso ideal, 
+etc. Para isso use como referência a seguinte tabela:
 
 +------------------------------------------------------------------------------------+
 |              VALOR IMC                  |        SITUAÇÃO DO INDIVÍDUO             |

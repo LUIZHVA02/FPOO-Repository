@@ -1,0 +1,40 @@
+Qual a média final do aluno (PARTE 2)? (ATIVIDADE 05)
+
+ATIVIDADE 05 - Uma escola calcula a nota final do aluno efetuando a média simples entre as notas obtidas em cada bimestre.
+Você deverá construir um programa em Java que calcule a média final do aluno.
+
+O aluno é considerado APROVADO caso a média final seja maior ou igual a 6, caso contrário o aluno é considerado REPROVADO.
+
+ O programa deverá solicitar o nome do aluno e as quatro notas equivalentes a cada bimestre. A interação do usuário com o programa deverá ser da seguinte forma:
+
+*************************************
+              MÉDIA FINAL
+*************************************
+
+Nome do aluno: Pedro
+Nota do bimestre 1: 8,8
+Nota do bimestre 2: 9,5
+Nota do bimestre 3: 7,3
+Nota do bimestre 4: 9,2
+
+------------------------------------
+
+Pedro, a sua nota final é 5,7
+QUE PENA!! VOCÊ FOI REPROVADO!!
+
+------------------------------------
+
+OU
+
+------------------------------------
+
+Pedro, a sua nota final é 8,7
+PARABÉNS!! VOCÊ FOI APROVADO!!
+
+------------------------------------
+
+ORIENTAÇÕES:
+
+1) Nome do projeto: media_final
+
+2) Enviar o projeto "zipado" (compactado) para celso@celso.dev.br

@@ -1,0 +1,7 @@
+Atividade 12
+
+Escreva um programa, em Java, que solicite o nome do usuário 
+e quantas vezes ele deseja ver o nome repetido na tela. 
+utilize o Scanner para essa tarefa.
+
+Envie o projeto para celso@celso.dev.br

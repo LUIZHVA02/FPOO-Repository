@@ -1,0 +1,44 @@
+ATIVIDADE 11
+
+
+Desafio Jokenpô
+
+Pedra, papel e tesoura, também chamado em algumas regiões do Brasil de jokenpô, é um jogo de mãos recreativo e simples para duas ou mais pessoas, que não requer equipamentos nem habilidade. O jogo é frequentemente empregado como método de seleção, assim como lançar moedas, jogar dados, entre outros.
+
+Você deverá escrever um programa em Java que permita que o usuário jogue Jokenpô com o computador.
+
+As regras são as seguintes:
+
+Ao iniciar o programa, um menu deve ser apresentado ao usuário, por exemplo:
+
+*************************************
+        J  O  K  E  N  P  Ô
+*************************************
+
+1 - Pedra
+2 - Papel
+3 - Tesoura
+
+--------------------------------------
+Faça a sua escolha (1 à 3)? 2
+
+Você escolheu ----> PAPEL!
+O PC escolheu ----> TESOURA!
+
+*****************************
+******    QUE PENA!!   ******
+******  O PC VENCEU!!! ******
+*****************************
+
+No caso do usuário vencer a mensagem final deverá ser:
+
+*****************************
+******    PARABÉNS!!   ******
+******  VOCÊ VENCEU!!! ******
+*****************************
+
+OBSERVAÇÃO: Se o jogador escolher um valor inválido, o jogo deverá ser finalizado e o usuário deve ser avisado.
+
+
+
+
