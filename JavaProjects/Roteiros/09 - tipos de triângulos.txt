@@ -2,16 +2,26 @@
 |     TIPOS DE TRIÂNGULOS (ATIVIDADE 09)      |
 +---------------------------------------------+
 
-O seu professor de geometria pediu a sua ajuda para desenvolver um programa, em Java, que determine se uma forma geométrica de 3 lados é um triângulo. Caso a forma geométrica seja um triângulo também deverá ser determinado se o triângulo é isósceles, escaleno ou equilátero.
+O seu professor de geometria pediu a sua ajuda para desenvolver um programa, 
+em Java, que determine se uma forma geométrica de 3 lados é um triângulo. 
+Caso a forma geométrica seja um triângulo também deverá ser determinado 
+se o triângulo é isósceles, escaleno ou equilátero.
 
 ***O que é um triângulo?
 
-Um triângulo é uma forma geométrica composta por três lados, e o valor de cada lado deve ser menor que a soma dos valores dos outros dois lados. Perceba que é uma regra (uma condição) e deve ser plenamente considerada. Assim sendo, é um triângulo quando A < B+C, quando B < A+C e quando C < A+B, considerando como lados as variáveis a, b e c.
+Um triângulo é uma forma geométrica composta por três lados, 
+e o valor de cada lado deve ser menor que a soma dos valores dos outros dois lados. 
+Perceba que é uma regra (uma condição) e deve ser plenamente considerada. 
+Assim sendo, é um triângulo quando A < B+C, quando B < A+C e quando C < A+B, 
+considerando como lados as variáveis a, b e c.
 
 
 ***Tipos de triângulo
 
-Tendo certeza de que os três valores informados para os três lados formam um triângulo, determine se o triângulo é isósceles, escaleno ou equilátero, sendo:
+Tendo certeza de que os três valores informados 
+para os três lados formam um triângulo, 
+determine se o triângulo é isósceles, 
+escaleno ou equilátero, sendo:
 
 >>ISÓSCELES
 Quando possui dois lados iguais e um diferente, sendo A=B ou A=C ou B=C.
