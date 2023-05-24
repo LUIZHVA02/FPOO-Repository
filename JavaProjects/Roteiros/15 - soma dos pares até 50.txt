@@ -1,5 +1,8 @@
 Atividade 15
 
-Elaborar um programa que apresente a somatória dos números pares de 1 até 50. Utilize o laço FOR para executar essa tarefa. Apresente o resultado no console.
+Elaborar um programa que apresente a 
+somatória dos números pares de 1 até 50. 
+Utilize o laço FOR para executar essa tarefa. 
+Apresente o resultado no console.
 
 Enviar o projeto para celso@celso.dev.br

@@ -16,7 +16,7 @@ public class Atividade16 {
 		resultado = largura * comprimento;
 		
 		
-		for(continuar == sim) {
+		for() {
 			
 		System.out.println("Qual Cômodo Deseja Medir?");
 		nomeComodo = teclado.nextLine();

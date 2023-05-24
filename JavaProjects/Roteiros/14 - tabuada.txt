@@ -1,12 +1,21 @@
 Atividade 14
 
-Você deve escrever um programa que permita ao usuário obter a tabuada de qualquer número selecionado por ele. Por exemplo, deve ser possível obtermos a tabuada do 97 começando no 74 até o 128.
+Você deve escrever um programa que permita ao usuário 
+obter a tabuada de qualquer número selecionado por ele.
+Por exemplo, deve ser possível obtermos a tabuada do 
+97 começando no 74 até o 128.
 
-O sistema deverá solicitar ao usuário o multiplicando, o mínimo e o máximo multiplicador, e a partir daí gerar a tabuada que deverá ser apresentada ao usuário.
+O sistema deverá solicitar ao 
+usuário o multiplicando, 
+o mínimo e o máximo multiplicador, 
+e a partir daí gerar a tabuada que 
+deverá ser apresentada ao usuário.
 
 Exemplo:
 
-Se o usuário escolher o multiplicando 7, o mínimo multiplicador 3 e o máximo multiplicador 8, deverá ser apresentada a seguinte saída ao usuário:
+Se o usuário escolher o multiplicando 7, 
+o mínimo multiplicador 3 e o máximo multiplicador 8, 
+deverá ser apresentada a seguinte saída ao usuário:
 
 Tabuada do 7
 -------------------------

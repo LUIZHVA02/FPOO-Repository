@@ -1,0 +1,12 @@
+Desenvolver um programa que construa uma 
+matriz A do tipo vetor com 20 elementos.
+Consruir uma matriz B do tipo vetor
+que armazene os valores da matriz A invertidos.
+Por exemplo, o valor armazenado no primeiro
+índice de A deverá ser armazenado no último
+índice de B, o valor armazenado no segundo índice
+de A deverá ser armazenado no penúltimo índice de B.
+
+Obervação, utilize o while para executar essa tarefa.
+
+Enviar o projeto para celso@celso.dev.br

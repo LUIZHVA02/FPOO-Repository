@@ -7,7 +7,8 @@ public class Atividade14 {
 	public static void main(String[] args) {
 		Scanner teclado = new Scanner(System.in);
 		
-		int valorMin, valorMax, valorA, valorB, valor1, valor2, multiplicando;
+		int valorMin = 0, valorMax = 0, valorA = 0, 
+				valorB = 0,  multiplicando = 0;
 		
 		System.out.println("----------------------------------------");
 		System.out.println("----------------TABUADAS----------------");
@@ -22,26 +23,23 @@ public class Atividade14 {
 		System.out.println("                                       ");
 		
 		if (valorA > valorB) {
+			valorMin = valorB;
+			valorMax = valorA;
+		}
+		if (valorA < valorB) {
 			valorMin = valorA;
 			valorMax = valorB;
-		}
-		else {
-			valorMax = valorA;
-			valorMin = valorB;
 		}
 		
 		System.out.println("Tabuada do " + multiplicando);
 		System.out.println("-----------------------------------");
 		System.out.println("                                   ");
 		
-		valor1 = multiplicando * valorA;
-		valor2 = multiplicando * valorB;
-		
-		while (valor1 != valor2) {
-			System.out.println(multiplicando * valorMin);
-		
+		while(valorMin <= valorMax) {
+			System.out.println(multiplicando + " X " + valorMin + 
+								" = " + valorMin*multiplicando);
 			valorMin++;
-			}
+		}
 		
 
 }

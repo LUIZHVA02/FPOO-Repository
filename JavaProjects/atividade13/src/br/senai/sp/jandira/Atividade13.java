@@ -7,7 +7,7 @@ public class Atividade13 {
 	public static void main(String[] args) {
 		Scanner teclado = new Scanner(System.in);
 		
-		int valorA, valorB, valorMaior, ValorMenor;
+		int valorA, valorB, valorMaior, valorMenor;
 		
 		System.out.println("Digite dois valores abaixo.");
 		System.out.println("          ");
@@ -20,25 +20,23 @@ public class Atividade13 {
 		System.out.println("    ");
 		
 		if (valorA < valorB) {
-			System.out.println("Os múltiplos de 6 entre " 
-		+ valorA + " e " + valorB + " são: ");
-		} else if (valorB < valorA) {
-			System.out.println("Os múltiplos de 6 entre " 
-		+ valorB + " e " + valorA + " são: ");
+			System.out.println("Os múltiplos de 6 entre " + valorA + " e " + valorB + " são: ");
+		} else if (valorB<valorA) {
+			System.out.println("Os múltiplos de 6 entre " + valorB + " e " + valorA + " são: ");
 		}
 		
 		if (valorA < valorB) {
 		valorMaior = valorB;
-		ValorMenor = valorA;	
+		valorMenor = valorA;	
 			
 		} 
 		else {
 		valorMaior = valorA;
-		ValorMenor = valorB;
+		valorMenor = valorB;
 		
 		}
 			
-		int v = ValorMenor;
+		int v = valorMenor;
 		while (v <= valorMaior) {
 			if (v % 6 == 0){
 			System.out.println(v);
