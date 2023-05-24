@@ -1,9 +1,18 @@
 Atividade 17
 
+<<<<<<< HEAD
 Desenvolver um programa que solicite ao usuário seis números inteiros. 
 Os números fornecidos pelo usuário devem ser armazenados em uma matriz 
 A do tipo vetor. No final, apresente o total da soma de todos os elementos 
 que sejam ímpares.
+=======
+Desenvolver um programa que solicite 
+ao usuário seis números inteiros. 
+Os números fornecidos pelo usuário devem 
+ser armazenados em uma matriz A do tipo vetor. 
+No final, apresente o total da soma de 
+todos os elementos que sejam ímpares.
+>>>>>>> 0bce05359004c8ebcc4bdde6c3a6e1a30e9ee88e
 
 Observação:
  - Utilize o Scanner para solicitar a entrada dos dados;
