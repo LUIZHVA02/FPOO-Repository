@@ -1,6 +1,10 @@
 Atividade 21
 
-Criar um sistema que permita o cadastro dos alunos de uma turma. O cadastro deverá permitir o cadastro do nome, e das 4 notas bimestrais. Ao final do cadastro, deverá ser exibida uma tabela com os nomes, notas bimestrais, média final e situação do aluno (Aprovado ou Reprovado). Antes de começar, o sistema deverá solicitar o números de alunos que serão cadastrados.
+Criar um sistema que permita o cadastro dos alunos de uma turma. 
+O cadastro deverá permitir o cadastro do nome, e das 4 notas bimestrais. 
+Ao final do cadastro, deverá ser exibida uma tabela com os nomes, notas bimestrais, 
+média final e situação do aluno (Aprovado ou Reprovado). 
+Antes de começar, o sistema deverá solicitar o números de alunos que serão cadastrados.
 
 Observações:
   Para o aluno ser considerado aprovado ele deverá obter nota maior ou igual a 5.
@@ -27,7 +31,7 @@ Cadastrar outro aluno (S/N)?
 ------------------------------------------------------------
                    LISTA GERAL DA TURMA
 ------------------------------------------------------------
-Nome          Nota1  Nota2  Nota3  Nota4  Média  	Situação
+Nome                    Nota1  Nota2  Nota3  Nota4  Média  	Situação
 ------------------------------------------------------------
 Ana Maria		5.0    8.0    9.0    5.0    6.5  	APROVADO
 Ana Maria		5.0    8.0    9.0    5.0    6.5  	APROVADO

@@ -1,8 +1,0 @@
-System.out.printf("%-20s %-9s %-9s %-9s %-9s %-9s %-10s %n","|Nome", "|Nota 1", "|Nota 2", "|Nota 3", "|Nota 4", "|Média", "|Situação|");
-System.out.println("------------------------------------------------------------------");
-for(int linha = 0;linha < alunos.length;linha++) {
-	System.out.printf("%-20s %-9s %-9s %-9s %-9s %-9s %-10s %n","|"+ alunos[linha][0],"|"+ notasAlunos[linha][0],
-																"|"+ notasAlunos[linha][1],"|"+ notasAlunos[linha][2],
-																"|"+ notasAlunos[linha][3],"|"+ mediaAlunos[linha][0],
-																"|"+ alunos[linha][1] +"|");
-}
