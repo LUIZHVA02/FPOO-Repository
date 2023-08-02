@@ -1,7 +1,0 @@
-Fase 1: Classes
-
-Lista de Chamada: disciplina, turma, aluno, notas do trimestre
-Aluno: nome, data de nascimento, número de matrícula
-Turma: ano letivo, presença, sub-turma, semestre
-Disciplina: professor, nome da disciplina, notas, frequência
-Notas: 1ºTrimestre 2ºTrimestre 3ºTrimestre

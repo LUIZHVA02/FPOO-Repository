@@ -1,0 +1,13 @@
+Fase 1: Classes
+
+Lista de Chamada: disciplina, turma, aluno
+
+Aluno: nome, dataNascimento, numeroMatricula, 
+telefone, email
+
+Professor:nome, dataNascimento, numeroMatricula, 
+telefone, email
+
+Turma: anoLetivo, subturma, nome, alunos[]
+
+Disciplina: professores[], nomeDisciplina, cargaHoraria
