@@ -12,5 +12,19 @@ public class Main {
         Register register = new Register();
 
         register.Decision();
-    }
+
+        System.out.println("Deseja Cadastrar Novamente? Sim(s) Não(n)");
+        String resposta = teclado.nextLine();
+
+        if ("s".equals(resposta)) {
+                Register register1 = new Register();
+
+                register1.Decision();
+
+                System.out.println("Deseja Cadastrar Novamente? Sim(s) Não(n)");
+                resposta = teclado.nextLine();
+            }
+
+            System.out.println("Fim do Código!");}
+
 }
