@@ -22,7 +22,6 @@ public class Register {
             RegisterEnemy();
             output.PrintPlayer(player);
             output.PrintEnemy(enemy);
-
     }
     public void RegisterPlayer(){
 
@@ -77,10 +76,16 @@ public class Register {
             RegisterEnemy();
             break;
 
-            case "Ambos":
-                BothRegister();
+        case "ambos":
+            BothRegister();
             default:
     }
+        System.out.println("Deseja Cadastrar Novamente? Sim(1) Não(2)");
+        int continuar = teclado.nextInt();
+
+        if (continuar == 1) {
+            Decision();
+        }
     }
 }
 
