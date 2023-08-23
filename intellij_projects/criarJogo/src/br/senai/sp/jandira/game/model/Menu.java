@@ -26,7 +26,7 @@ public class Menu {
                 case 1:
                     register.Decision();
                     battle.ChoiceScenario();
-                    battle.Battle();
+                    battle.BattleInfo();
                     break;
 
                 case 2:
