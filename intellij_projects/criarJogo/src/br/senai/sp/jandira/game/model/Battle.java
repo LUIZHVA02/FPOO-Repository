@@ -10,8 +10,7 @@ public class Battle {
     /* Instância scenario */
     Scenario scenario = new Scenario();
 
-    public void Battle(Player player, Enemy enemy){
-
+    public void BattleInfo(Player player, Enemy enemy){
         System.out.println(player);
         System.out.println(enemy);
     }

@@ -23,7 +23,7 @@ public class Register {
             output.PrintPlayer(player);
             output.PrintEnemy(enemy);
     }
-    public void RegisterPlayer(){
+    public Player RegisterPlayer(){
 
 
         /* Coleta de dados Player 1 */
@@ -40,8 +40,10 @@ public class Register {
         output.PrintPlayer(player);
         }
 
+        return player;
+
     }
-    public void RegisterEnemy(){
+    public Enemy RegisterEnemy(){
 
 
         /* Coleta de dados Enemy 1 */
@@ -58,6 +60,7 @@ public class Register {
         output.PrintEnemy(enemy);
         }
 
+        return enemy;
     }
     public void Decision(){
         String escolha;
