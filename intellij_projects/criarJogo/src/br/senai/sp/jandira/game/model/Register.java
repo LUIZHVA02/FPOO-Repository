@@ -1,5 +1,6 @@
 package br.senai.sp.jandira.game.model;
 
+import javax.sound.midi.Soundbank;
 import java.util.Locale;
 import java.util.Scanner;
 public class Register {

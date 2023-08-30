@@ -10,7 +10,7 @@ public class Battle {
     /* Instância scenario */
     Scenario scenario = new Scenario();
 
-    public void Battle(Player player, Enemy enemy){
+    public void BattleInfo(Player player, Enemy enemy){
 
         while(true) {
             int vidaPlayer = player.getVidaPlayer();
@@ -27,10 +27,13 @@ public class Battle {
 
             System.out.println("-------------------- Battle --------------------");
             System.out.println(" Ataque Player [ C ]  " + player.nome);
+            System.out.println(" Defesa Player [ D ]  " + player.nome);
             System.out.println(" Ataque Enemy [ X ]  " + enemy.nome);
+            System.out.println(" Defesa Enemy [ Y ]  " + enemy.nome);
             System.out.println("------------------------------------------------");
 
             String attack = teclado.next();
+            String deffense = teclado.next();
 
             if (attack.equalsIgnoreCase("C")) {
 
@@ -39,10 +42,20 @@ public class Battle {
                 System.out.println("---------------------------");
 
                 int danoPlayer = (int) (Math.random() * 20) + 1;
-                enemy.subtrairVida(danoPlayer);
+                int defesaEnemy = (int) (Math.random() * 20) + 1;
+
+                int danoReal = danoPlayer - defesaEnemy;
+
+                if (danoReal < 0){
+                    danoReal = 0;
+                }
+
+                enemy.subtrairVida(danoReal);
 
                 System.out.println("---------------------------------------");
-                System.out.println("O Ataque foi de: " + danoPlayer + " vida: " + vidaPlayer);
+                System.out.println("O Ataque foi de: " + danoPlayer);
+                System.out.println("A defesa foi de: " + defesaEnemy);
+                System.out.println("Vida: " + vidaPlayer);
                 System.out.println("---------------------------------------");
 
             } else if (attack.equalsIgnoreCase("X")) {
@@ -52,11 +65,23 @@ public class Battle {
                 System.out.println("---------------------------");
 
                 int danoEnemy = (int) (Math.random() * 20) + 1;
+                int defesaPlayer = (int) (Math.random() * 20) + 1;
+
+                int danoReal = danoEnemy - defesaPlayer;
+
+                if (danoReal < 0){
+                    danoReal = 0;
+                }
+
+                enemy.subtrairVida(danoReal);
+
                 enemy.subtrairVida(danoEnemy);
 
-                System.out.println("---------------------------");
-                System.out.println("O Ataque foi de: " + danoEnemy + " vida: " + vidaEnemy);
-                System.out.println("---------------------------");
+                System.out.println("---------------------------------------");
+                System.out.println("O Ataque foi de: " + danoEnemy);
+                System.out.println("A defesa foi de: " + defesaPlayer);
+                System.out.println("Vida: " + vidaEnemy);
+                System.out.println("---------------------------------------");
 
             } else {
                 System.out.println("Tecla Inválida");
