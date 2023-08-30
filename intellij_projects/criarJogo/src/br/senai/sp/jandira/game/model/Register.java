@@ -29,9 +29,9 @@ public class Register {
         /* Coleta de dados Player 1 */
         System.out.println("---------------- Cadastro Player ----------------");
         System.out.print("Qual o seu nome: ");
-        player.nome = teclado.nextLine();
+        player.nome = teclado.next();
         System.out.print("Escolha sua skin (RED - BLUE - PURPLE): ");
-        player.skin = teclado.nextLine();
+        player.skin = teclado.next();
         System.out.println("--------- Player Cadastrado com Sucesso ---------");
         System.out.println(" ");
 
@@ -49,9 +49,9 @@ public class Register {
         /* Coleta de dados Enemy 1 */
         System.out.println("---------------- Cadastro Enemy ----------------");
         System.out.print("Qual o nome do seu inimigo: ");
-        enemy.nome = teclado.nextLine();
+        enemy.nome = teclado.next();
         System.out.print("Escolha a skin do inimigo (RED - BLUE - PURPLE): ");
-        enemy.skin = teclado.nextLine();
+        enemy.skin = teclado.next();
         System.out.println("--------- Enemy Cadastrado com Sucesso ---------");
         System.out.println(" ");
 
@@ -67,7 +67,7 @@ public class Register {
 
         System.out.println("Seja Bem Vindo !!!");
         System.out.println("O que você deseja cadastrar agora? \nAmbos, Player ou Enemy? ");
-        escolha = teclado.nextLine();
+        escolha = teclado.next();
 
         switch (escolha.toLowerCase()){
 

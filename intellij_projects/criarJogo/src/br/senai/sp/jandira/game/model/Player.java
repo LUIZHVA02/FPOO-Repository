@@ -5,11 +5,19 @@ public class Player {
     public String nome;
     public String skin;
 
-    private int vidaPlayer;
+    private int vida;
     public Player(){
-        vidaPlayer = 100;
+        vida = 100;
     }
     public int getVidaPlayer(){
-        return vidaPlayer;
+        return vida;
+    }
+
+    public void subtrairVida (int danoEnemy){
+        vida -= danoEnemy;
+
+        if (vida < 0){
+            vida = 0;
+        }
     }
 }

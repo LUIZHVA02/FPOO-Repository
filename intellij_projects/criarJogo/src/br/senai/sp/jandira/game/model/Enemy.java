@@ -1,14 +1,23 @@
 package br.senai.sp.jandira.game.model;
 
 public class Enemy {
+
     public String nome;
     public String skin;
 
-    private int vidaEnemy;
+    private int vida;
     public Enemy(){
-        vidaEnemy = 100;
+        vida = 100;
     }
-    public int getVidaPlayer(){
-        return vidaEnemy;
+    public int getVidaEnemy(){
+        return vida;
+    }
+
+    public void subtrairVida (int danoPlayer){
+        vida -= danoPlayer;
+
+        if (vida < 0){
+            vida = 0;
+        }
     }
 }

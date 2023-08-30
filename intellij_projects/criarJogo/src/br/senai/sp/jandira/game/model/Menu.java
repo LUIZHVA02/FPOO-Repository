@@ -8,9 +8,9 @@ public class Menu {
         Register register = new Register();
         Battle battle = new Battle();
 
-        boolean continuar = true;
+        boolean exit = false;
 
-        while (continuar){
+        while (!exit){
             System.out.println("-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-");
             System.out.println("--------------- Bem Vindo ---------------");
             System.out.println("Escolha uma das opções: ");
@@ -25,17 +25,15 @@ public class Menu {
 
                 case 1:
                     register.Decision();
-                    battle.ChoiceScenario();
-                    battle.BattleInfo();
                     break;
 
                 case 2:
                     battle.ChoiceScenario();
-                    System.out.println("Feature is being Developed");
+                    battle.Battle(register.player, register.enemy);
                     break;
 
                 case 3:
-                    continuar = false;
+                    exit = false;
                     break;
 
             }

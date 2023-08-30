@@ -19,7 +19,7 @@ public class Main {
         Register register = new Register();
         register.Decision();*/
 
-            System.out.println("Fim do Código!");
+        System.out.println("Fim do Código!");
 
     }
 }

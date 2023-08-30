@@ -20,7 +20,7 @@ public class OutPut {
 
     public void PrintEnemy(Enemy enemy){
 
-        int enemyVida = enemy.getVidaPlayer();
+        int enemyVida = enemy.getVidaEnemy();
 
         /* Printar informações*/
         System.out.println("/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-");
