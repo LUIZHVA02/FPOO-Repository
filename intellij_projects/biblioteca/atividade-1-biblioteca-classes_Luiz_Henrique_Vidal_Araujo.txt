@@ -1,0 +1,10 @@
+Classes:
+
+Catálogo: livros, autor, ISBN e gênero
+
+Livros: Livros Emprestados, Datas de Empestimo, Datas de Devolução, 
+
+login: informações do usuário, informações do cadastro
+
+Cadastro: nome, email, data de nascimento, 
+gêneros preferidos
