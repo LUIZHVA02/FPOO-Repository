@@ -8,6 +8,19 @@ public class Cadastro {
     String telefone;
     String cpf;
     Scanner teclado = new Scanner(System.in);
-    public void MethodCadastro() {
+    public void UserCadastro() {
+        System.out.println("---------- Cadastro de Usuário ----------");
+        System.out.print("Digite o seu nome: ");
+        nome = teclado.next();
+        System.out.println("-----------------------------------------");
+        System.out.print("Digite o seu endereço: ");
+        endereco = teclado.next();
+        System.out.println("-----------------------------------------");
+        System.out.print("Digite o seu telefone(com DDD): ");
+        telefone = teclado.next();
+        System.out.println("-----------------------------------------");
+        System.out.println("Digite o seu CPF: ");
+        cpf = teclado.next();
+        System.out.println("-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-");
     }
 }

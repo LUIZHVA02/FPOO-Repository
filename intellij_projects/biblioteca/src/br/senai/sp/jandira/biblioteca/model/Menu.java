@@ -4,11 +4,11 @@ import java.lang.reflect.Method;
 import java.util.Scanner;
 
 public class Menu {
-    Scanner teclado = new Scanner(System.in);
+    Scanner tecladoMain = new Scanner(System.in);
 
-    Cadastro cadastro = new Cadastro();
-    Livros livros = new Livros();
-    Login login = new Login();
+    Cadastro cadastroMain = new Cadastro();
+    Livros livrosMain = new Livros();
+    Login loginMain = new Login();
     public void Menu() {
         System.out.println( "|Seja Bem-Vindo!\n" +
                             "|Como deseja começar?\n" +
@@ -19,20 +19,20 @@ public class Menu {
                             "|Encerrar Programa(4)\n" +
                             "|------------------------------\n");
 
-        int escolhaMenu = teclado.nextInt();
-        String vazio = teclado.nextLine();
+        int escolhaMenu = tecladoMain.nextInt();
+        String vazio = tecladoMain.nextLine();
 
         if(escolhaMenu == 1) {
-            cadastro.MethodCadastro();
+            cadastroMain.methodCadastro();
 
         } else if (escolhaMenu == 2) {
-            login.MethodLogin();
+            loginMain.methodLogin();
 
         } else if (escolhaMenu == 3) {
-            livros.MethodLivros();
+            livrosMain.methodLivros(livrosMain);
 
         } else if (escolhaMenu == 4) {
-            System.out.println("Fim do Código!!!");
+            System.out.println("Fim do Programa!!!");
         }
     }
 }
