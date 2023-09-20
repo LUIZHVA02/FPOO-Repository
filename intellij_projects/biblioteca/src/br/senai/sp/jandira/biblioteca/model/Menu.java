@@ -33,7 +33,7 @@ public class Menu {
 
             } else if (escolhaMenu == 4) {
                 System.out.println("Fim do Programa!!!");
-                finalizar = false;
+                finalizar = true;
             }
         }
     }
