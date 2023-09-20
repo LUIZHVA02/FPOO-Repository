@@ -8,7 +8,7 @@ public class Menu {
     Cadastro cadastroMain = new Cadastro();
     Livro livrosMain = new Livro();
     boolean finalizar = false;
-    public void Menu() {
+    public void menu() {
 
         while (!finalizar) {
             System.out.println("|Seja Bem-Vindo!\n" +
@@ -23,7 +23,7 @@ public class Menu {
             int escolhaMenu = tecladoMain.nextInt();
 
             if (escolhaMenu == 1) {
-                cadastroMain.UserCadastro();
+                cadastroMain.userCadastro();
 
             } else if (escolhaMenu == 2) {
                 livrosMain.listarLivros();

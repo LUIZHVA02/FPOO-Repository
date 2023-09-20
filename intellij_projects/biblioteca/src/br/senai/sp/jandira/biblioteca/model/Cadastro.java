@@ -8,7 +8,7 @@ public class Cadastro {
     String telefone;
     String cpf;
     Scanner teclado = new Scanner(System.in);
-    public void UserCadastro() {
+    public void userCadastro() {
         System.out.println("---------- Cadastro de Usuário ----------");
         System.out.print("Digite o seu nome: ");
         nome = teclado.next();
