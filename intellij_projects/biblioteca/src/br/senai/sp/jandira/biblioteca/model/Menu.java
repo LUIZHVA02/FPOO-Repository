@@ -5,34 +5,36 @@ import java.util.Scanner;
 
 public class Menu {
     Scanner tecladoMain = new Scanner(System.in);
-
     Cadastro cadastroMain = new Cadastro();
-    Livros livrosMain = new Livros();
-    Login loginMain = new Login();
+    Livro livrosMain = new Livro();
+    boolean finalizar = false;
     public void Menu() {
-        System.out.println( "|Seja Bem-Vindo!\n" +
-                            "|Como deseja começar?\n" +
-                            "|------------------------------\n" +
-                            "|Cadastrar(1)\n" +
-                            "|Fazer Login(2)\n" +
-                            "|Consultar Livros(3)\n" +
-                            "|Encerrar Programa(4)\n" +
-                            "|------------------------------\n");
 
-        int escolhaMenu = tecladoMain.nextInt();
-        String vazio = tecladoMain.nextLine();
+        while (!finalizar) {
+            System.out.println("|Seja Bem-Vindo!\n" +
+                               "|Como deseja começar?\n" +
+                               "|------------------------------\n" +
+                               "|Cadastrar(1)\n" +
+                               "|Consultar Livros(2)\n" +
+                               "|Adicionar Livros(3)\n" +
+                               "|Encerrar Programa(4)\n" +
+                               "|------------------------------\n");
 
-        if(escolhaMenu == 1) {
-            cadastroMain.methodCadastro();
+            int escolhaMenu = tecladoMain.nextInt();
 
-        } else if (escolhaMenu == 2) {
-            loginMain.methodLogin();
+            if (escolhaMenu == 1) {
+                cadastroMain.UserCadastro();
 
-        } else if (escolhaMenu == 3) {
-            livrosMain.methodLivros(livrosMain);
+            } else if (escolhaMenu == 2) {
+                livrosMain.listarLivros();
 
-        } else if (escolhaMenu == 4) {
-            System.out.println("Fim do Programa!!!");
+            } else if (escolhaMenu == 3) {
+                livrosMain.adicionarLivros(livrosMain);
+
+            } else if (escolhaMenu == 4) {
+                System.out.println("Fim do Programa!!!");
+                finalizar = false;
+            }
         }
     }
 }

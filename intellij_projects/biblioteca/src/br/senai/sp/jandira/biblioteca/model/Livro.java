@@ -6,19 +6,30 @@ import java.util.Scanner;
 
 public class Livro {
     Scanner teclado = new Scanner(System.in);
-    String nomeLivro;
-    String dataDevolucao;
-    String isbn;
+    public String nomeLivro;
+    public String isbn;
+    public String autorLivro;
     List<Livro> listLivros = new ArrayList<>();
     public void adicionarLivros(Livro livro) {
         listLivros.add(livro);
+        System.out.println("----------- Cadastro do Livro -----------");
+        System.out.println("Digite o nome do livro: ");
+        nomeLivro = teclado.nextLine();
+        System.out.println("-----------------------------------------");
+        System.out.println("Digite o nome do autor: ");
+        autorLivro = teclado.nextLine();
+        System.out.println("-----------------------------------------");
+        System.out.println("Digite o ISBN do livro: ");
+        isbn = teclado.nextLine();
+        System.out.println("-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-");
+        System.out.println("");
     }
     public void listarLivros(){
         for(Livro livro : listLivros){
 
             System.out.println(livro.nomeLivro);
+            System.out.println(livro.autorLivro);
             System.out.println(livro.isbn);
-            System.out.println(livro.dataDevolucao);
             System.out.println();
 
         }
