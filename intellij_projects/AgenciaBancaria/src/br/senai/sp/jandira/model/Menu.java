@@ -5,9 +5,9 @@ import java.util.Scanner;
 public class Menu {
     Scanner scanner = new Scanner(System.in);
 
-    Cliente cliente = new Cliente();
+    Cliente referenciaCliente = new Cliente();
 
-    Conta conta = new Conta();
+    Conta referenciaConta = new Conta();
 
     public void executarMenu(){
 
@@ -16,35 +16,59 @@ public class Menu {
         while (continuar) {
             System.out.println("//-------- Menu --------//");
             System.out.println("1 - Cadastrar Cliente");
-            System.out.println("2 - Consultar Saldo");
-            System.out.println("3 - Realizar Deposito");
-            System.out.println("4 - Realizar Saque");
-            System.out.println("5 - Sair");
+            System.out.println("2 - Gerar Conta");
+            System.out.println("3 - Consultar Saldo");
+            System.out.println("4 - Realizar Deposito");
+            System.out.println("5 - Realizar Saque");
+            System.out.println("6 - Realizar Transferência");
+            System.out.println("7 - Sair");
             System.out.println("/-/-/-/-/-/-/-/-/-/-/-/-/");
 
             int option = scanner.nextInt();
+            scanner.nextLine();
+
             switch (option) {
                 case 1:
+                    Cliente cliente = new Cliente();
                     cliente.cadastrarCliente();
+                    referenciaCliente.adicionarCliente(cliente);
                     break;
 
                 case 2:
-                    conta.consultarSaldo();
+                    System.out.println("Informe o CPF do Titular: ");
+                    long cpfTitular = scanner.nextLong();
+                    scanner.nextLine();
+
+                    Cliente clienteTitular = referenciaCliente.pesquisarCliente(cpfTitular);
+                    if(clienteTitular != null){
+                        Conta conta = new Conta();
+                        conta.gerarConta(clienteTitular);
+                        referenciaConta.adicionarContaList(conta);
+                    }
+
+
                     break;
 
                 case 3:
-                    System.out.println("Informe o valor de depósito: ");
-                    double valorDeposito = scanner.nextDouble();
-                    conta.realizarDeposito(valorDeposito);
+                    referenciaConta.consultarSaldo();
                     break;
 
                 case 4:
-                    System.out.println("Informe o valor de saque: ");
-                    double valorSaque = scanner.nextDouble();
-                    conta.realizarSaque(valorSaque);
+                    System.out.println("Informe o valor de depósito: ");
+                    double valorDeposito = scanner.nextDouble();
+                    referenciaConta.realizarDeposito(valorDeposito);
                     break;
 
                 case 5:
+                    System.out.println("Informe o valor de saque: ");
+                    double valorSaque = scanner.nextDouble();
+                    referenciaConta.realizarSaque(valorSaque);
+                    break;
+
+                case 6:
+
+
+                case 7:
                     continuar = false;
                     break;
             }

@@ -29,6 +29,7 @@ public class Menu {
                 livrosMain.listarLivros();
 
             } else if (escolhaMenu == 3) {
+                livrosMain.livroCadastro();
                 livrosMain.adicionarLivros(livrosMain);
 
             } else if (escolhaMenu == 4) {
