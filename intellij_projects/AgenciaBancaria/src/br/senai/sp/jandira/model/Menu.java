@@ -102,6 +102,19 @@ public class Menu {
                     break;
 
                 case 6:
+                    System.out.println("Informe o CPF do Titular: ");
+                    long cpfTransferencia = scanner.nextLong();
+                    scanner.nextLine();
+
+                    Conta contaTransferencia = referenciaConta.pesquisarConta(cpfTransferencia);
+
+                    if(contaTransferencia != null){
+                        System.out.println("Informe o valor da transferência: ");
+                        double valorTransferencia = scanner.nextDouble();
+                        contaTransferencia.realizarTransferencia(valorTransferencia);
+                    } else {
+                        System.out.println("O usuário não possui conta cadastrada...");
+                    }
                     System.out.println("Feature in Development...");
                     break;
                 case 7:
