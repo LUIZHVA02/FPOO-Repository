@@ -40,34 +40,70 @@ public class Menu {
                     scanner.nextLine();
 
                     Cliente clienteTitular = referenciaCliente.pesquisarCliente(cpfTitular);
+
                     if(clienteTitular != null){
                         Conta conta = new Conta();
                         conta.gerarConta(clienteTitular);
                         referenciaConta.adicionarContaList(conta);
+                        System.out.println("Conta criada com sucesso...");
+                    } else {
+                        System.out.println("Impossível gerar a conta...");
+                        System.out.println("Necessário cadastrar cliente...");
                     }
 
 
                     break;
 
                 case 3:
-                    referenciaConta.consultarSaldo();
+                    System.out.println("Informe o CPF do Titular: ");
+                    long cpfConta = scanner.nextLong();
+                    scanner.nextLine();
+
+                    Conta contaPesquisada = referenciaConta.pesquisarConta(cpfConta);
+
+                    if(contaPesquisada != null){
+                        double saldo = contaPesquisada.getSaldo();
+                        System.out.println("O saldo disponível na conta é: " + saldo);
+                    } else {
+                        System.out.println("O usuário não possui conta cadastrada...");
+                    }
                     break;
 
                 case 4:
-                    System.out.println("Informe o valor de depósito: ");
-                    double valorDeposito = scanner.nextDouble();
-                    referenciaConta.realizarDeposito(valorDeposito);
+                    System.out.println("Informe o CPF do Titular: ");
+                    long cpfDeposito = scanner.nextLong();
+                    scanner.nextLine();
+
+                    Conta contaDeposito = referenciaConta.pesquisarConta(cpfDeposito);
+
+                    if(contaDeposito != null){
+                        System.out.println("Informe o valor de depósito: ");
+                        double valorDeposito = scanner.nextDouble();
+                        contaDeposito.realizarDeposito(valorDeposito);
+                    } else {
+                        System.out.println("O usuário não possui conta cadastrada...");
+                    }
                     break;
 
                 case 5:
-                    System.out.println("Informe o valor de saque: ");
-                    double valorSaque = scanner.nextDouble();
-                    referenciaConta.realizarSaque(valorSaque);
+                    System.out.println("Informe o CPF do Titular: ");
+                    long cpfSaque = scanner.nextLong();
+                    scanner.nextLine();
+
+                    Conta contaSaque = referenciaConta.pesquisarConta(cpfSaque);
+
+                    if(contaSaque != null){
+                        System.out.println("Informe o valor de depósito: ");
+                        double valorSaque = scanner.nextDouble();
+                        contaSaque.realizarSaque(valorSaque);
+                    } else {
+                        System.out.println("O usuário não possui conta cadastrada...");
+                    }
                     break;
 
                 case 6:
-
-
+                    System.out.println("Feature in Development...");
+                    break;
                 case 7:
                     continuar = false;
                     break;
