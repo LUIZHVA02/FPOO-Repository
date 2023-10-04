@@ -69,7 +69,7 @@ public class Conta {
         System.out.println("Seu saldo atual é "+ this.saldo);
     }
 
-    public void realizarTransferencia (){
+    public void realizarTransferencia (double valorTransferencia){
 
     }
 }
