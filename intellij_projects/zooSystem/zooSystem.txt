@@ -1,0 +1,9 @@
+Zoo_System
+Classes:
+
+App: menu()
+Alojamento: tipoHabi
+
+Animais: nomeAnimal, idade, genero, saude, 
+especie, alojamento.tipoHabi
+Menu: alojamento(), animais()

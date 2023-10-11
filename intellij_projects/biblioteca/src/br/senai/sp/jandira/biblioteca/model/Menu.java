@@ -29,8 +29,9 @@ public class Menu {
                 livrosMain.listarLivros();
 
             } else if (escolhaMenu == 3) {
-                livrosMain.livroCadastro();
-                livrosMain.adicionarLivros(livrosMain);
+                Livro livro = new Livro();
+                livro.livroCadastro();
+                livrosMain.adicionarLivros(livro);
 
             } else if (escolhaMenu == 4) {
                 System.out.println("Fim do Programa!!!");
