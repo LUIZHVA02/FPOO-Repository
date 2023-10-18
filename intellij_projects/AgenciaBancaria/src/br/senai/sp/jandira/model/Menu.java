@@ -22,7 +22,7 @@ public class Menu {
             System.out.println("5 - Realizar Saque");
             System.out.println("6 - Realizar Transferência");
             System.out.println("7 - Sair");
-            System.out.println("/-/-/-/-/-/-/-/-/-/-/-/-/");
+            System.out.println("/-/-/-/-/-/-/-/-/-/-/-/-/-/");
 
             int option = scanner.nextInt();
             scanner.nextLine();
