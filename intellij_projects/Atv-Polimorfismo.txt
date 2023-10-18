@@ -1,0 +1,22 @@
+Projeto: Gerenciador de Formas Geométricas
+
+Objetivo:
+Criar um programa em Java que permite ao usuário calcular áreas e perímetros de diferentes formas geométricas usando polimorfismo.
+
+Requisitos:
+
+Crie uma classe abstrata chamada FormaGeometrica que tenha os métodos abstratos calcularArea() e calcularPerimetro().
+
+Crie duas classes concretas que herdem da classe FormaGeometrica: Circulo e Retangulo. 
+Essas classes devem implementar os métodos abstratos calcularArea() e calcularPerimetro() de acordo com as fórmulas apropriadas.
+
+Crie uma classe principal chamada GerenciadorFormas com o método main(). 
+Nesta classe, o usuário deve ser capaz de escolher entre criar um círculo ou um retângulo.
+
+O programa deve permitir ao usuário inserir os dados necessários para criar a forma geométrica 
+escolhida (por exemplo, raio para o círculo ou comprimento e largura para o retângulo).
+
+Uma vez que a forma geométrica tenha sido criada, o programa deve chamar os métodos calcularArea() e 
+calcularPerimetro() da classe FormaGeometrica apropriada (polimorfismo) e exibir os resultados.
+
+O programa deve oferecer a opção de criar e calcular mais formas geométricas ou sair.
