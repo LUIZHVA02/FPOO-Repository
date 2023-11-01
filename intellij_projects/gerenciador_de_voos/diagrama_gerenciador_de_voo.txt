@@ -1,0 +1,6 @@
+Classes: 
+
+Companhias: nome, 
+
+Vôos: numeroVoo, origem, destino, dataPartida, 
+horaPartida, capacidadePassageiros

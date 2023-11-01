@@ -8,7 +8,6 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args) {
 
-        Scanner scanner = new Scanner(System.in);
         Pessoas emily = new Pessoas("Emily", 18);
         Pessoas nycolle = new Pessoas("Nycolle", 26);
 
