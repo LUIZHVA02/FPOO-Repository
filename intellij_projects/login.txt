@@ -1,0 +1,33 @@
+function handler(e) {
+    e.preventDefault();
+
+    let email = document.querySelector('#email').value;
+    let password = document.querySelector('#password').value;
+
+    let validaEmail = "admin";
+    let validaPass = "admin";
+
+    let linkHome = "./src/screens/home.html";
+    let home = document.createElement('a');
+    home.href = linkHome;
+
+    if (email && password) {
+
+        if (email == validaEmail && password == validaPass) {
+
+            home.click();
+	    // Desenvolva seu codigo aqui !!
+
+        } else {
+            alert('Email e/ou Senha Incorreto (s)!');
+        }
+
+    } else {
+        alert('Campo de email ou senha esta vazio, por favor preencha!');
+}
+
+
+window.onload = () => {
+    const submit = document.querySelector('.form-submit');
+    submit.addEventListener('click', handler);
+}
