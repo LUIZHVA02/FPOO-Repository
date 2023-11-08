@@ -1,11 +1,8 @@
 package br.senai.sp.jandira.model;
 
-import java.time.LocalDateTime;
-import java.time.LocalTime;
-
 public class Gol extends Companhias {
 
-    public Gol(){
+    public Gol(long numeroVoo, long capacidadePassageiros, String origem, String destino, String dataPartida, String horaPartida){
         companhia = "gol";
         cnpj = "07.575.651/0001-59:";
     }

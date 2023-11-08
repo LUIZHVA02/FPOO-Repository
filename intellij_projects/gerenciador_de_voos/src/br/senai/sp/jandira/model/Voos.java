@@ -2,13 +2,13 @@ package br.senai.sp.jandira.model;
 
 import java.time.LocalDateTime;
 import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
 
 public abstract class Voos {
     long numeroVoo, capacidadePassageiros;
     String origem, destino, companhia;
-    LocalDateTime dataPartida;
-    LocalTime horaPartida;
-
+    String dataPartida   = LocalDateTime.now().format(DateTimeFormatter.ofPattern("dd/MM/yyyy"));
+    String horaPartida   = LocalDateTime.now().format(DateTimeFormatter.ofPattern("HH:mm:ss"));
     public String getCompanhia() {
         return companhia;
     }
@@ -49,19 +49,4 @@ public abstract class Voos {
         this.destino = destino;
     }
 
-    public LocalDateTime getDataPartida() {
-        return dataPartida;
-    }
-
-    public void setDataPartida(LocalDateTime dataPartida) {
-        this.dataPartida = dataPartida;
-    }
-
-    public LocalTime getHoraPartida() {
-        return horaPartida;
-    }
-
-    public void setHoraPartida(LocalTime horaPartida) {
-        this.horaPartida = horaPartida;
-    }
 }
