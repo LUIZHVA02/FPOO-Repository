@@ -1,7 +1,6 @@
 package br.senai.sp.jandira.model;
 
 import java.time.LocalDateTime;
-import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 
 public abstract class Voos {
